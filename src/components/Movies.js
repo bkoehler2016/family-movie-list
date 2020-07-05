@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Table } from "reactstrap";
 import axios from "axios";
+import '../App.css';
 
 class Movies extends Component{
     constructor() {
@@ -18,7 +19,7 @@ class Movies extends Component{
     }
     render() {
         return (
-          <Table hover>
+          <Table bordered>
             <thead>
                 <tr>
                     <th>Title</th>
@@ -32,11 +33,11 @@ class Movies extends Component{
                 <tbody  key={movie.id}>
                     <tr>
                         <td>{movie.title}</td>
-                       
-                       
+                      
+                     
                         <td>{movie.release_year}</td>
                       
-                      
+                     
                         <td>{movie.rating}</td>
                         
                         <td>{movie.owner}</td>

@@ -5,7 +5,8 @@ import Movies from './components/Movies';
 function App() {
   return (
     <div className="App">
-      <h1>Hello From Movies</h1>
+      <h1>Family Movies</h1>
+      <br/>
       <Movies />
     </div>
   );
