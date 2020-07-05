@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col} from "reactstrap";
+import { Table } from "reactstrap";
 import axios from "axios";
 
 class Movies extends Component{
@@ -18,19 +18,34 @@ class Movies extends Component{
     }
     render() {
         return (
-          <Container>
-            <Row>
+          <Table hover>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Release year</th>
+                    <th>Rating</th>
+                    <th>Owner</th>
+                    <th>Format</th>
+                </tr>
+                </thead>
               {this.state.movies.map(movie => (
-                <Col xs="6" key={movie.id}>
-                  <Row>Title: {movie.title}</Row>
-                  <Row>Release Year: {movie.release_year}</Row>
-                  <Row>Rating: {movie.rating}</Row>
-                  <Row>Owner: {movie.owner}</Row>
-                  <Row>Format: {movie.format}</Row>
-                </Col>
+                <tbody  key={movie.id}>
+                    <tr>
+                        <td>{movie.title}</td>
+                       
+                       
+                        <td>{movie.release_year}</td>
+                      
+                      
+                        <td>{movie.rating}</td>
+                        
+                        <td>{movie.owner}</td>
+                       
+                        <td>{movie.format}</td>
+                        </tr>
+                </tbody>
               ))}
-            </Row>
-          </Container>
+            </Table>
         );
       }
     }
