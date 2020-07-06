@@ -35,7 +35,7 @@ class Movies extends Component{
                         <td>{movie.title}</td>
                       
                      
-                        <td>{movie.release_year}</td>
+                        <td>{movie.releaseYear}</td>
                       
                      
                         <td>{movie.rating}</td>

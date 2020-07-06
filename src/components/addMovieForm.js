@@ -10,8 +10,7 @@ export default function MovieForm() {
   };
 
   const handleSubmit = () => {
-    axios
-      .post("https://family-movie-list1.herokuapp.com/api/movies", newMovie)
+    axios.post("https://family-movie-list1.herokuapp.com/api/movies", newMovie)
       .then(res => {
         console.log(res);
         
@@ -30,9 +29,9 @@ export default function MovieForm() {
       />
       <input
         type="number"
-        name="release_year"
-        id="release_year"
-        value={newMovie.release_year}
+        name="releaseYear"
+        id="releaseYear"
+        value={newMovie.releaseYear}
         placeholder="Release Year"
         onChange={handleChange}
       />
