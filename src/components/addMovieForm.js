@@ -29,9 +29,9 @@ export default function MovieForm() {
       />
       <input
         type="number"
-        name="release_year"
-        id="release_year"
-        value={newMovie.release_year}
+        name="releaseYear"
+        id="releaseYear"
+        value={newMovie.releaseYear}
         placeholder="Release Year"
         onChange={handleChange}
       />
