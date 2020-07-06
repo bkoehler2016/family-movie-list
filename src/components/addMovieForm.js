@@ -61,7 +61,9 @@ export default function MovieForm() {
       />
       <Button color="primary" type="submit">
         Add New Movie
+        
       </Button>
+      
     </form>
   );
 }
