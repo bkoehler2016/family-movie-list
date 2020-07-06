@@ -10,8 +10,7 @@ export default function MovieForm() {
   };
 
   const handleSubmit = () => {
-    axios
-      .post("https://family-movie-list1.herokuapp.com/api/movies", newMovie)
+    axios.post("https://family-movie-list1.herokuapp.com/api/movies", newMovie)
       .then(res => {
         console.log(res);
         
