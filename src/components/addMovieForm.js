@@ -14,7 +14,8 @@ event.preventDefault()
 axios.post('https://bkoehler2016-family-movielist-backend.glitch.me/api/movies', newMovie)
 .then(res =>{
   console.log(res)
-})
+  window.location.reload();
+  })
  }
 
   return (
