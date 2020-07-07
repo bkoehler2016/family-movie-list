@@ -10,9 +10,9 @@ export default function MovieForm() {
   };
 
   const handleSubmit = () => {
-    axios.post("https://familymovielist1.herokuapp.com/api/movies", newMovie)
+    axios.post('https://bkoehler2016-family-movielist-backend.glitch.me/api/movies', newMovie)
       .then(res => {
-        console.log(res);
+       
         
       });
   };

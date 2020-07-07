@@ -12,7 +12,7 @@ class Movies extends Component{
     }
 
     componentDidMount(){
-        axios.get('https://familymovielist1.herokuapp.com/api/movies').then(res => {
+        axios.get('https://bkoehler2016-family-movielist-backend.glitch.me/api/movies').then(res => {
             const movies = res.data;
             this.setState({movies})
         });
