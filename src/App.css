@@ -12,6 +12,7 @@ td{
 }
 @media only screen and (max-width: 600px) {
   .App {
+    background: lightblue;
     display: flex;
     flex-direction: column;
   }
