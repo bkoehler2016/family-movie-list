@@ -60,6 +60,7 @@ axios.post('https://bkoehler2016-family-movielist-backend.glitch.me/api/movies',
         placeholder="Format"
         onChange={handleChange}
       />
+      <br/>
       <Button color="primary" type="submit">
         Add New Movie
         
